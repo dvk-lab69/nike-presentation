@@ -37,14 +37,14 @@ export default function WorldMap({
     const { theme } = useTheme();
 
     if (!mounted) {
-        return <div className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg relative font-sans animate-pulse" />;
+        return <div className="w-full aspect-[2/1] bg-white rounded-lg relative font-sans animate-pulse" />;
     }
 
     const svgMap = map.getSVG({
         radius: 0.22,
-        color: theme === "dark" || !theme ? "#FFFFFF40" : "#00000040",
+        color: "#00000040",
         shape: "circle",
-        backgroundColor: theme === "dark" || !theme ? "black" : "white",
+        backgroundColor: "white",
     });
 
     const projectPoint = (lat: number, lng: number) => {
@@ -64,15 +64,16 @@ export default function WorldMap({
     };
 
     return (
-        <div className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg  relative font-sans">
+        <div className="w-full aspect-[2/1] bg-white rounded-lg relative font-sans">
             <img
                 src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-                className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
+                className="h-full w-full pointer-events-none select-none"
                 alt="world map"
                 height="495"
                 width="1056"
                 draggable={false}
             />
+
             <svg
                 ref={svgRef}
                 viewBox="0 0 800 400"
@@ -92,12 +93,13 @@ export default function WorldMap({
                                 initial={{
                                     pathLength: 0,
                                 }}
-                                animate={{
+                                whileInView={{
                                     pathLength: 1,
                                 }}
+                                viewport={{ once: true }}
                                 transition={{
-                                    duration: 1,
-                                    delay: 0.5 * i,
+                                    duration: 3,
+                                    delay: 0.4 * i,
                                     ease: "easeOut",
                                 }}
                                 key={`start-upper-${i}`}

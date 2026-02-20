@@ -10,7 +10,7 @@ export function VisualDiagram() {
             icon: Cpu,
             title: "Design & HQ",
             subtitle: "Innovation Center",
-            details: ["Beaverton, Oregon (USA)", "R&D, Design, Marketing"],
+            details: ["Beaverton, Oregon (USA)"],
             color: "text-blue-500",
             bg: "bg-blue-500/10",
             border: "border-blue-500/20"
@@ -56,10 +56,7 @@ export function VisualDiagram() {
     return (
         <Section className="bg-neutral-950 border-y border-neutral-900 py-16 md:py-24">
             <div className="max-w-7xl mx-auto w-full px-4">
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
+                <div
                     className="mb-16 text-center"
                 >
                     <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-4">THE OFFSHORE MODEL</h2>
@@ -67,19 +64,15 @@ export function VisualDiagram() {
                         A unilinear flow of value creation: from design in Oregon to manufacturing in Asia,
                         consolidating in global hubs for final distribution.
                     </p>
-                </motion.div>
+                </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
                     {/* Connection Line (Desktop) */}
                     <div className="absolute top-12 left-0 w-full h-0.5 bg-neutral-800 -z-0 hidden md:block" />
 
                     {steps.map((step, idx) => (
-                        <motion.div
+                        <div
                             key={idx}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.15 }}
                             className={`relative z-10 bg-neutral-900/50 backdrop-blur-sm border ${step.border} p-6 rounded-2xl flex flex-col gap-4 hover:bg-neutral-900 transition-colors h-full`}
                         >
                             {/* Header */}
@@ -105,7 +98,7 @@ export function VisualDiagram() {
                                     </li>
                                 ))}
                             </ul>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

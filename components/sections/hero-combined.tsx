@@ -23,41 +23,29 @@ export function HeroCombined() {
 
             {/* Main Title Area */}
             <div className="relative z-10 text-center space-y-4 mb-16">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                <h2
                     className="text-white/80 text-sm md:text-base font-mono tracking-[0.3em] uppercase"
                 >
                     Nike, Inc.
-                </motion.h2>
+                </h2>
 
-                <motion.h1
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
+                <h1
                     className="text-5xl md:text-8xl font-display font-medium leading-tight tracking-wider text-white uppercase"
                 >
                     GLOBAL
                     <br />
                     FACTORY
-                </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.4 }}
+                </h1>
+                <p
                     className="text-white/90 text-xl md:text-2xl mt-4 font-light tracking-wide shadow-black drop-shadow-md"
                 >
                     Internationalization & Value Chain
-                </motion.p>
+                </p>
             </div>
 
             {/* Info Grid (Detailed Profile) */}
             <div className="relative z-10 max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 text-left px-4">
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.6 }}
+                <div
                     className="space-y-6"
                 >
                     <div className="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800 backdrop-blur-sm">
@@ -82,22 +70,24 @@ export function HeroCombined() {
                         <h3 className="text-cyan-400 font-mono text-xs uppercase tracking-widest mb-2">Key Performance Indicators</h3>
                         <div className="grid grid-cols-2 gap-4">
                             <div>
-                                <span className="block text-neutral-500 text-xs uppercase">Revenue (2023)</span>
-                                <span className="text-white font-bold text-2xl">$51 Billion</span>
+                                <span className="block text-neutral-500 text-xs uppercase">Revenue (2025)</span>
+                                <span className="text-white font-bold text-2xl">~$46.6 Billion</span>
+                            </div>
+                            <div>
+                                <span className="block text-neutral-500 text-xs uppercase">Net Income</span>
+                                <span className="text-white font-bold text-2xl">~$3.2 Billion</span>
                             </div>
                             <div>
                                 <span className="block text-neutral-500 text-xs uppercase">Employees</span>
-                                <span className="text-white font-bold text-2xl">83,700</span>
-                                <span className="block text-neutral-600 text-xs">(Direct)</span>
+                                <span className="text-white font-bold text-2xl">~83,700</span>
+                                <span className="block text-neutral-600 text-xs">(Corporate)</span>
+                                <span className="block text-neutral-600 text-[10px] mt-1 text-cyan-500">+1M Supply Chain</span>
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.8 }}
+                <div
                     className="space-y-6"
                 >
                     <div className="p-6 rounded-2xl bg-neutral-900/40 border border-neutral-800 backdrop-blur-sm h-full">
@@ -120,7 +110,7 @@ export function HeroCombined() {
                             </li>
                         </ul>
                     </div>
-                </motion.div>
+                </div>
             </div>
 
             <div className="mt-12 text-center relative z-10">

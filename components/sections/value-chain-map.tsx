@@ -17,7 +17,7 @@ export function ValueChainMap() {
                     GLOBAL VALUE CHAIN
                 </motion.h2>
                 <p className="text-neutral-400 text-sm md:text-base max-w-3xl mx-auto">
-                    <span className="text-blue-700 font-bold">Design (USA)</span> &rarr;
+                    <span className="text-blue-700 font-bold">Design/HQ</span> &rarr;
                     <span className="text-pink-500 font-bold"> Mfg (Asia)</span> &rarr;
                     <span className="text-pink-500 font-bold"> Logistics</span> &rarr;
                     <span className="text-yellow-400 font-bold"> Hubs</span> &rarr;
@@ -30,7 +30,7 @@ export function ValueChainMap() {
                 <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-8 bg-neutral-900/50 p-4 rounded-full max-w-fit mx-auto backdrop-blur-sm border border-neutral-800">
                     <div className="flex items-center gap-2">
                         <div className="w-3 h-3 rounded-full bg-blue-800" />
-                        <span className="text-white text-xs font-mono uppercase">Design (USA)</span>
+                        <span className="text-white text-xs font-mono uppercase">Design/HQ</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-green-500" />

@@ -6,21 +6,27 @@ import { cn } from "@/lib/utils";
 
 const stats = [
     {
-        label: "Annual Revenue (2023)",
-        value: "$51B",
-        description: "Global leader in athletic footwear & apparel.",
+        label: "Annual Revenue",
+        value: "~$46.6B",
+        description: "Total sales (2025).",
         className: "md:col-span-2 md:row-span-1 bg-neutral-900/50 border-neutral-800",
     },
     {
-        label: "Direct Employees",
-        value: "83,000",
-        description: "Corporate & Retail staff.",
+        label: "Net Income",
+        value: "~$3.2B",
+        description: "Profit after expenses (Approx).",
+        className: "md:col-span-2 md:row-span-1 bg-neutral-900/50 border-neutral-800",
+    },
+    {
+        label: "Corporate Employees",
+        value: "~83,700",
+        description: "Direct corporate staff.",
         className: "md:col-span-1 md:row-span-1 bg-neutral-900/50 border-neutral-800",
     },
     {
         label: "Supply Chain Workers",
         value: "1,000,000+",
-        description: "Employed by independent suppliers.",
+        description: "Workers in the supply chain.",
         className: "md:col-span-1 md:row-span-2 bg-cyan-950/20 border-cyan-900/50",
         valueColor: "text-cyan-400",
     },
